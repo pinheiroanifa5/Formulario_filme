@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>formulario_filme</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="m_first">
+    <div class="d_first">
+      <p>Filmes Favoritos</p>        
+    </div>
+
+    <div id="d_second">
+      <div id="d_third">
+        <label for="title">Nome</label>
+        <br>
+        <input type="text" name="title" id="title" />                
+      </div>
+      <div>
+        <label for="rating">Rating</label>
+        <br>
+        <input
+          type="number"
+          step="1"
+          max="5"
+          min="1"
+          name="rating"
+          id="rating"
+        />                  
+      </div>
+    </div>
+
+    <button class="add">Adicionar Filme</button>    
+  </main>
+
+  <main id="m_second">
+    <div id="d_four">
+      <p>Filtar por Nome</p>        
+    </div>
+ 
+    <button class="add" id="search">Search</button> 
+    
+  </main>
+  <div id="filmes-container"></div>
+</body>
+</html>
